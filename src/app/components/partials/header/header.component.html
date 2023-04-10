@@ -1,0 +1,27 @@
+<header>
+    <div class="container">
+        <a routerLink="/" class="logo">FOODKIT</a>
+        <nav>
+            <ul>
+                <li>
+                    <a routerLink="/login">login</a>
+                </li>
+
+                <li class="menu-container">
+                    <a routerLink="/dashboard">IFEOMA</a>
+                    <div class="menu">
+                        <a routerLink="/profile">Profile</a>
+                        <a routerLink="/orders">orders</a>
+                        <a>logout</a>
+                    </div>
+                </li>
+
+                <li>
+                    <a routerLink="/cart-page">
+                        cart <span *ngIf="cartQuantity">{{cartQuantity}}</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
